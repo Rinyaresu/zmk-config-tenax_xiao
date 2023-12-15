@@ -76,9 +76,9 @@
 
         layer_2 {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN       &kp HASH        &kp DOLLAR            &kp PERCENT    &kp CARET         &kp AMPERSAND          &kp ASTERISK     &kp TILDE          &kp EQUAL
-&kp MINUS        &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp SQT
-&kp PLUS         &trans            &trans          &trans                &trans         &trans            &trans                 &trans           &kp BACKSLASH      &kp GRAVE
+&kp EXCLAMATION  &kp AT_SIGN       &kp HASH        &kp DOLLAR            &kp PERCENT    &kp CARET         &kp AMPERSAND          &kp ASTERISK     &mt LS(MINUS) MINUS          &mt LS(EQUAL) EQUAL
+&trans           &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET            &mt LS(SQT) SQT
+&trans           &trans            &trans          &trans                &trans         &trans            &trans                 &trans           &mt LS(BACKSLASH) BACKSLASH  &mt LS(GRAVE) GRAVE
                                                    &trans                &kp TAB        &kp SPACE         &kp RET                &kp BACKSPACE    &trans
             >;
         };
