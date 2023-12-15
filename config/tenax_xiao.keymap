@@ -113,7 +113,7 @@
         layer_6 {
             bindings = <
 &bootloader  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bootloader
-&trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&sys_reset   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &sys_reset
 &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                              &trans  &trans  &trans  &trans  &trans  &trans
             >;
