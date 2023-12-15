@@ -90,5 +90,14 @@
                          &trans  &kp TAB  &kp SPACE  &trans    &trans    &trans
             >;
         };
+
+        layer_4 {
+            bindings = <
+&kp  &kp  &kp  &kp  &kp  &kp K_REDO  &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_PASTE
+&kp  &kp  &kp  &kp  &kp  &kp         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
+&kp  &kp  &kp  &kp  &kp  &kp         &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END
+               &kp  &kp  &kp         &kp             &kp             &kp
+            >;
+        };
     };
 };
