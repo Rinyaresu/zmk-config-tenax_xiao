@@ -2,6 +2,7 @@
 #include "abnt2.h"
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
 #define NAV  1
@@ -102,10 +103,10 @@
 
         layer_6 {
             bindings = <
-&bootloader  &trans  &trans  &trans      &trans  &trans  &trans      &trans  &trans  &bootloader
-&sys_reset   &trans  &trans  &bt BT_PRV  &trans  &trans  &bt BT_NXT  &trans  &trans  &sys_reset
-&trans       &trans  &trans  &trans      &trans  &trans  &trans      &trans  &trans  &trans
-                             &trans      &trans  &trans  &trans      &trans  &trans
+&bootloader  &trans        &trans      &trans      &trans  &trans  &trans      &trans      &trans        &bootloader
+&sys_reset   &out OUT_TOG  &bt BT_CLR  &bt BT_PRV  &trans  &trans  &bt BT_NXT  &bt BT_CLR  &out OUT_TOG  &sys_reset
+&trans       &trans        &trans      &trans      &trans  &trans  &trans      &trans      &trans        &trans
+                                       &trans      &trans  &trans  &trans      &trans      &trans
             >;
         };
     };
