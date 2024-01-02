@@ -103,10 +103,10 @@
 
         layer_6 {
             bindings = <
-&bootloader  &trans        &trans      &trans      &trans  &trans  &trans      &trans      &trans        &bootloader
-&sys_reset   &out OUT_TOG  &bt BT_CLR  &bt BT_PRV  &trans  &trans  &bt BT_NXT  &bt BT_CLR  &out OUT_TOG  &sys_reset
-&trans       &trans        &trans      &trans      &trans  &trans  &trans      &trans      &trans        &trans
-                                       &trans      &trans  &trans  &trans      &trans      &trans
+&bootloader  &trans        &trans      &trans  &trans  &trans  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bootloader
+&sys_reset   &out OUT_TOG  &bt BT_CLR  &trans  &trans  &trans  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &sys_reset
+&trans       &trans        &trans      &trans  &trans  &trans  &trans         &trans         &trans         &trans
+                                       &trans  &trans  &trans  &trans         &trans         &trans
             >;
         };
     };
