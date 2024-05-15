@@ -86,10 +86,10 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp PRINTSCREEN  &kp K_STOP  &kp C_PAUSE      &kp K_MUTE         &trans
-&trans  &trans  &trans  &trans  &trans  &trans           &kp K_NEXT  &kp K_VOLUME_UP  &kp K_VOLUME_DOWN  &kp K_PREVIOUS
-&trans  &trans  &trans  &trans  &trans  &trans           &trans      &trans           &trans             &trans
-                        &trans  &trans  &trans           &trans      &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &kp PRINTSCREEN  &kp K_STOP       &kp C_PAUSE   &kp K_MUTE  &trans
+&trans  &trans  &trans  &trans  &trans  &kp K_NEXT       &kp K_VOLUME_UP  &kp K_VOL_DN  &kp K_PREV  &trans
+&trans  &trans  &trans  &trans  &trans  &trans           &trans           &trans        &trans      &trans
+                        &trans  &trans  &trans           &trans           &trans        &trans
             >;
         };
 
